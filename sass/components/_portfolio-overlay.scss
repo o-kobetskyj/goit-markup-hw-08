@@ -1,0 +1,43 @@
+/* Portfolio overlay set */
+
+.overlay-project {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--portfolio-overlay-bg-cl);
+  transform: translateY(100%);
+  transition: transform var(--animation-base);
+  opacity: 0;
+
+  & {
+    .portfolio-link:hover &,
+    .portfolio-link:focus & {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+}
+
+.portfolio-overlay__text {
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  color: var(--white-txt-cl);
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.portfolio-desc {
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}

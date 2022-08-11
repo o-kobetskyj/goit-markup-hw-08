@@ -1,0 +1,55 @@
+.title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  color: var(--title-txt-cl);
+  margin-bottom: 50px;
+  text-align: center;
+}
+.main-title {
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}
+.characteristic-set__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-txt-cl);
+
+  &--below-indent {
+    margin-bottom: 10px;
+  }
+}
+
+.command-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-txt-cl);
+
+  &--indent-below {
+    margin-bottom: 10px;
+  }
+}
+
+.subtitle-potfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--title-txt-cl);
+  margin-bottom: 4px;
+}

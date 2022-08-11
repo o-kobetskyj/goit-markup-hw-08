@@ -1,0 +1,25 @@
+.about-section {
+  padding-top: 0;
+}
+
+.about-set__card {
+  position: relative;
+}
+.about-set__overlay {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background-color: var(--gradient-linear-bg);
+}
+.about-set__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}

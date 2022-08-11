@@ -1,0 +1,45 @@
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent-main);
+}
+
+/* Сharacteristics section */
+.characteristic-set__item {
+  flex-basis: calc(
+    (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
+      var(--items-characteristic-section)
+  );
+}
+
+/* About us section */
+.about-set {
+  flex-basis: calc(
+    (100% - var(--indent-main) * (var(--items-about-us) - 1)) /
+      var(--items-about-us)
+  );
+}
+
+/* Command section */
+.command-card {
+  flex-basis: calc(
+    (100% - var(--indent-main) * (var(--items-command) - 1)) /
+      var(--items-command)
+  );
+}
+
+/* Portfolio section */
+.portfolio-items {
+  flex-basis: calc(
+    (100% - var(var(--indent-main)) * (var(--items-portfolio) - 1)) /
+      var(--items-portfolio)
+  );
+  cursor: pointer;
+}
+
+.btn-set {
+  display: flex;
+  gap: var(--indent-btn);
+  justify-content: center;
+  margin-bottom: 50px;
+}

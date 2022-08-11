@@ -1,0 +1,37 @@
+:root {
+  /* Fonts */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  /* Text colors */
+  --main-txt-cl: #757575;
+  --accent-txt-cl: #2196f3;
+  --title-txt-cl: #212121;
+  --white-txt-cl: #ffffff;
+  --footer-contacts-txt-cl: rgba(255, 255, 255, 0.6);
+  /* Bg and other colors */
+  --border-modal-btn-cl: rgba(0, 0, 0, 0.1);
+  --border-modal-input-cl: rgba(33, 33, 33, 0.2);
+  --portfolio-overlay-bg-cl: rgba(33, 150, 243, 0.9);
+  --backdrop-bg-cl: rgba(0, 0, 0, 0.2);
+  --footer-social-bg-cl: rgba(255, 255, 255, 0.1);
+  --foter-subscribe-border-cl: rgba(255, 255, 255, 0.3);
+  --client-icon-cl: #afb1b8;
+  --gradient-linear-bg: rgba(47, 48, 58, 0.4);
+  --dark-bg-cl: #2f303a;
+  --light-bg-cl: #f5f4fa;
+  --active-bg-btn-hero: #188ce8;
+  --filter-btn-bg-cl: #f5f4fa;
+  --portfolio-section-wrapper-cl: #eeeeee;
+  --header-border-cl: #ececec;
+  --btn-border-cl: transparent;
+  /* Indent and items */
+  --indent-header: 50px;
+  --indent-main: 30px;
+  --indent-btn: 8px;
+  --items-characteristic-section: 4;
+  --items-about-us: 3;
+  --items-command: 4;
+  --items-portfolio: 3;
+  /* Animation */
+  --animation-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
