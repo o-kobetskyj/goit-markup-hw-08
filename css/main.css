@@ -276,6 +276,22 @@ img {
       flex-basis: calc((100% - var(--indent-main) * (var(--items-command) - 1)) / var(--items-command));
 }
 
+.client-item {
+  --items-characteristic-section: 2;
+  -ms-flex-preferred-size: calc((100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) / var(--items-characteristic-section));
+      flex-basis: calc((100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) / var(--items-characteristic-section));
+}
+@media screen and (min-width: 768px) {
+  .client-item {
+    --items-characteristic-section: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-item {
+    --items-characteristic-section: 6;
+  }
+}
+
 /* Portfolio section */
 .portfolio-items {
   -ms-flex-preferred-size: calc((100% - var(var(--indent-main)) * (var(--items-portfolio) - 1)) / var(--items-portfolio));
@@ -295,8 +311,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -327,8 +349,13 @@ img {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--title-txt-cl);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .title-section {
+    margin-bottom: 50px;
+  }
 }
 
 .main-title {
@@ -895,6 +922,12 @@ img {
 /* Сharacteristics section */
 .about-section {
   padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .about-section {
+    display: contents;
+  }
 }
 
 .about-set__card {
@@ -974,13 +1007,6 @@ img {
   border-top: none;
 }
 
-.client-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
 .client-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -991,7 +1017,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid var(--client-icon-cl);
   color: var(--client-icon-cl);
@@ -1006,6 +1031,21 @@ img {
 .client-link:focus {
   color: var(--accent-txt-cl);
   border: 1px solid var(--accent-txt-cl);
+}
+@media screen and (min-width: 480px) {
+  .client-link {
+    max-width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-link {
+    width: 170px;
+  }
 }
 
 .client-link__icon {

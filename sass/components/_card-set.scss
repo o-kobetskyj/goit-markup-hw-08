@@ -49,6 +49,21 @@
       var(--items-command)
   );
 }
+// client set
+
+.client-item {
+  --items-characteristic-section: 2;
+  flex-basis: calc(
+    (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
+      var(--items-characteristic-section)
+  );
+  @media screen and (min-width: 768px) {
+    --items-characteristic-section: 3;
+  }
+  @media screen and (min-width: 1200px) {
+    --items-characteristic-section: 6;
+  }
+}
 
 /* Portfolio section */
 .portfolio-items {
