@@ -246,9 +246,22 @@ img {
 }
 
 /* Сharacteristics section */
-.characteristic-set__item {
-  -ms-flex-preferred-size: calc((100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) / var(--items-characteristic-section));
-      flex-basis: calc((100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) / var(--items-characteristic-section));
+@media screen and (min-width: 480px) {
+  .characteristic-set__item {
+    --items-characteristic-section: 1;
+    -ms-flex-preferred-size: calc((100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) / var(--items-characteristic-section));
+        flex-basis: calc((100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) / var(--items-characteristic-section));
+  }
+}
+@media screen and (min-width: 768px) {
+  .characteristic-set__item {
+    --items-characteristic-section: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .characteristic-set__item {
+    --items-characteristic-section: 4;
+  }
 }
 
 /* About us section */
@@ -294,12 +307,12 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 448px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 720px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -332,6 +345,7 @@ img {
 }
 
 .characteristic-set__title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -341,6 +355,11 @@ img {
 }
 .characteristic-set__title--below-indent {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .characteristic-set__title {
+    text-align: left;
+  }
 }
 
 .command-subtitle {
@@ -844,13 +863,27 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
   height: 120px;
   background: var(--light-bg-cl);
   border-radius: 4px;
 }
 .characteristic-set__contaniner--below-indent {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .characteristic-set__contaniner {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .characteristic-set__contaniner {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .characteristic-set__contaniner {
+    width: 270px;
+  }
 }
 
 .characteristic-set__desc {
@@ -859,6 +892,7 @@ img {
   letter-spacing: 0.03em;
 }
 
+/* Сharacteristics section */
 .about-section {
   padding-top: 0;
 }

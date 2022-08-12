@@ -2,13 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+
+  // width: 270px;
+
   height: 120px;
   background: var(--light-bg-cl);
   border-radius: 4px;
 
   &--below-indent {
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 }
 
@@ -17,3 +29,13 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
+
+/* Сharacteristics section */
+// .characteristic-set__item {
+//   flex-basis: calc(
+//     (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
+//       var(--items-characteristic-section)
+//   );
+// }
+
+//  --items-characteristic-section: 4;

@@ -6,10 +6,32 @@
 
 /* Сharacteristics section */
 .characteristic-set__item {
-  flex-basis: calc(
-    (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
-      var(--items-characteristic-section)
-  );
+  // flex-basis: calc(
+  //   (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
+  //     var(--items-characteristic-section)
+  // );
+
+  @media screen and (min-width: 480px) {
+    --items-characteristic-section: 1;
+    flex-basis: calc(
+      (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
+        var(--items-characteristic-section)
+    );
+  }
+  @media screen and (min-width: 768px) {
+    --items-characteristic-section: 2;
+    // flex-basis: calc(
+    //   (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
+    //     var(--items-characteristic-section)
+    // );
+  }
+  @media screen and (min-width: 1200px) {
+    --items-characteristic-section: 4;
+    // flex-basis: calc(
+    //   (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
+    //     var(--items-characteristic-section)
+    // );
+  }
 }
 
 /* About us section */
