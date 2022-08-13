@@ -3,9 +3,13 @@
 }
 
 .site-nav {
-  margin-left: 93px;
+  margin-left: 88px;
   display: flex;
   gap: var(--indent-header);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav__link {

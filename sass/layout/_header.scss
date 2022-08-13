@@ -5,22 +5,38 @@
 .header__container {
   display: flex;
   align-items: center;
+  // justify-content: space-between;
 }
 
 .contacts-list {
   display: flex;
+  // gap: var(--indent-header);
+  // display: flex;
+  flex-wrap: wrap;
+  // gap: 10px;
+
   margin-left: auto;
-  gap: var(--indent-header);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.contacts-list__info {
+  display: block;
 }
 
 .contacts-list__link {
   display: flex;
   font-weight: 500;
-  font-size: 14px;
+
+  font-size: 12px;
+
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+
   gap: 10px;
   align-items: center;
   justify-content: center;

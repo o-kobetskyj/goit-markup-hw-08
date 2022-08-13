@@ -1,12 +1,18 @@
 .subscribe-container {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 .subscribe-form {
-  display: flex;
-  gap: 12px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
+  }
 }
 .subscribe-input {
-  min-width: 358px;
+  display: inline-block;
+  width: 100%;
   min-height: 50px;
   padding-top: 15px;
   padding-left: 15px;
@@ -24,5 +30,16 @@
     font-family: inherit;
     color: var(--white-txt-cl);
     border-color: var(--accent-txt-cl);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
   }
 }

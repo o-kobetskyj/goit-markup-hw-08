@@ -1,13 +1,9 @@
-// .client-list {
-//   display: flex;
-//   gap: 30px;
-// }
-
 .client-link {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 92px;
+  width: 100%;
   border: 1px solid var(--client-icon-cl);
   color: var(--client-icon-cl);
   border-radius: 4px;
@@ -20,15 +16,6 @@
   &:focus {
     color: var(--accent-txt-cl);
     border: 1px solid var(--accent-txt-cl);
-  }
-  @media screen and (min-width: 480px) {
-    max-width: 210px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 226px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 170px;
   }
 }
 

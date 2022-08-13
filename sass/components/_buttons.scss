@@ -81,6 +81,10 @@
   &:focus {
     background-color: var(--active-bg-btn-hero);
   }
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
 }
 .subscribe-btn__icon-send {
   fill: currentColor;

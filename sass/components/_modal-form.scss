@@ -75,9 +75,13 @@
 }
 
 .register-agreement__text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14;
+  }
 }
 
 .register-agreement__link {
