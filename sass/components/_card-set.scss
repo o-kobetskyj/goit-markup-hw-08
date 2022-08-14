@@ -36,14 +36,13 @@
       var(--items-command)
   );
 }
-// client set
 
+// client set
 .client-item {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 92px;
-
   --items-characteristic-section: 2;
   flex-basis: calc(
     (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
@@ -66,11 +65,4 @@
       var(--items-portfolio)
   );
   cursor: pointer;
-}
-
-.btn-set {
-  display: flex;
-  gap: var(--indent-btn);
-  justify-content: center;
-  margin-bottom: 50px;
 }

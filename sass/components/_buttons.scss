@@ -1,5 +1,4 @@
 // section-hero btn
-
 .btn {
   min-width: 200px;
   min-height: 50px;
@@ -25,7 +24,12 @@
 }
 
 // portfolio-section filter btn
-
+.btn-set {
+  display: flex;
+  gap: var(--indent-btn);
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .filter-btn {
   min-height: 38px;
   padding-top: 6px;
@@ -56,10 +60,8 @@
   color: var(--white-txt-cl);
   background-color: var(--accent-txt-cl);
 }
-.filter-btn--hyphen {
-  @media screen and (max-width: 1199px) {
-    min-width: 125px;
-  }
+.filter-btn--width {
+  min-width: 125px;
 }
 
 // footer suscribe btn
