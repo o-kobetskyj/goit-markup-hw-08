@@ -40,18 +40,6 @@
     text-align: left;
   }
 }
-.command-subtitle {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-txt-cl);
-
-  &--indent-below {
-    margin-bottom: 10px;
-  }
-}
 
 .subtitle-potfolio {
   font-weight: 700;

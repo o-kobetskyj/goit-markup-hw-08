@@ -47,7 +47,7 @@
             </li>
           </ul>
         </nav>
-        <button class="menu-btn" type="button">
+        <button class="menu-btn" type="button" data-menu-open>
           <svg width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
           </svg>
@@ -213,7 +213,7 @@
         </div>
       </section>
       <!-- Command section-->
-      <!-- <section class="command-section section">
+      <section class="command-section section">
         <div class="container">
           <h2 class="title-section">Наша команда</h2>
           <ul class="command-set card-set list">
@@ -523,7 +523,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="client-section section">
         <div class="container">
           <h2 class="title-section">Постійні клієнти</h2>
@@ -790,9 +790,14 @@
       </div>
     </div>
     <!-- mobile menu -->
-    <div class="menu-overlay">
+    <div class="menu-overlay" data-menu>
       <div class="mobile-container">
-        <ul class="mobile-list list">
+        <button class="menu-close" type="button" data-menu-close>
+          <svg class="menu-close__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-list mobile-list__nav list">
           <li class="mobile-item mobile-item__nav">
             <a href="" class="mobile-link mobile-link__nav link"
               ><span>Студія</span></a
@@ -850,5 +855,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
