@@ -2,57 +2,39 @@
   border-bottom: 1px solid var(--header-border-cl);
 }
 
-// .header {
-//   border-bottom: 1px solid var(--header-border-cl);
-// }
-
 .header__container {
   display: flex;
   align-items: center;
-  // justify-content: space-between;
 }
-// .header__container {
-//   display: flex;
-//   align-items: center;
-// }
 
 .contacts-list {
-  display: flex;
-  // gap: var(--indent-header);
-  // display: flex;
-  flex-wrap: wrap;
-  // gap: 10px;
-
-  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 138px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: var(--indent-header);
+  }
 }
-// .contacts-list {
-//   display: flex;
-//   margin-left: auto;
-//   gap: var(--indent-header);
-// }
-
-.contacts-list__info {
-  display: block;
+.contacts-list__item:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts-list__link {
   display: flex;
   font-weight: 500;
-
   font-size: 12px;
-
-  line-height: calc(16 / 14);
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
-
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  flex-basis: calc(
-    (100% - 10px * (var(--items-about-us) - 1)) / var(--items-about-us)
-  );
 
   gap: 10px;
   align-items: center;
@@ -63,29 +45,14 @@
   &:focus {
     color: var(--accent-txt-cl);
   }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 }
-// .contacts-list__link {
-//   display: flex;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: calc(16 / 14);
-//   letter-spacing: 0.02em;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   gap: 10px;
-//   align-items: center;
-//   justify-content: center;
-//   transition: color var(--animation-base);
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-txt-cl);
-//   }
-// }
 
 .contacts-list__icon {
   fill: currentColor;
 }
-
-// .contacts-list__icon {
-//   fill: currentColor;
-// }
