@@ -56,6 +56,11 @@
   color: var(--white-txt-cl);
   background-color: var(--accent-txt-cl);
 }
+.filter-btn--hyphen {
+  @media screen and (max-width: 1199px) {
+    min-width: 125px;
+  }
+}
 
 // footer suscribe btn
 .subscribe-btn {

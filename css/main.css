@@ -137,6 +137,12 @@ img {
   background-color: var(--accent-txt-cl);
 }
 
+@media screen and (max-width: 1199px) {
+  .filter-btn--hyphen {
+    min-width: 125px;
+  }
+}
+
 .subscribe-btn {
   display: -webkit-box;
   display: -ms-flexbox;
