@@ -79,7 +79,7 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -933,6 +933,7 @@ img {
   border-radius: 50%;
   background: var(--white-txt-cl);
   border: none;
+  color: var(--title-txt-cl);
   cursor: pointer;
   -webkit-transition: color var(--animation-base);
   transition: color var(--animation-base);
@@ -947,9 +948,6 @@ img {
 }
 
 .mobile-container {
-  position: fixed;
-  top: 0;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,7 +955,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 480px;
+  max-width: 480px;
   height: 100%;
   padding-top: 48px;
   padding-right: 40px;
