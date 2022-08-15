@@ -73,8 +73,6 @@
   }
 }
 .main-title {
-  max-width: 696px;
-
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -87,9 +85,9 @@
   text-transform: uppercase;
   color: var(--white-txt-cl);
   text-align: center;
+  max-width: 360px;
 
-  @media screen and (min-width: 1200px) {
-    max-width: 360px;
+  @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
     font-weight: 900;

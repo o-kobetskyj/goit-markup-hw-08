@@ -1253,7 +1253,6 @@ img {
 }
 
 .main-title {
-  max-width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -1264,11 +1263,7 @@ img {
   text-transform: uppercase;
   color: var(--white-txt-cl);
   text-align: center;
-}
-@media screen and (min-width: 1200px) {
-  .main-title {
-    max-width: 360px;
-  }
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .main-title {
