@@ -106,7 +106,6 @@
               </li>
             </ul>
           </div>
-
           <ul class="portfolio-set card-set list">
             <li class="portfolio-items">
               <a class="portfolio-link link" href="">
@@ -166,8 +165,6 @@
                     <img
                       src="./images/portfolio/img-1@1x_sm.jpg"
                       alt="Проект 1"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <div class="portfolio-overlay">
@@ -243,8 +240,6 @@
                     <img
                       src="./images/portfolio/img-2@1x_sm.webp"
                       alt="Проект 2"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <div class="portfolio-overlay">
@@ -257,8 +252,9 @@
                   </div>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="subtitle-potfolio">
-                    Постер New Orlean vs Golden Star
+                  <h2 class="subtitle-potfolio subtitle-potfolio--">
+                    <span class="design-error">Постер</span> New Orlean vs
+                    Golden Star
                   </h2>
                   <p class="portfolio-desc">Дизайн</p>
                 </div>
@@ -322,8 +318,6 @@
                     <img
                       src="./images/portfolio/img-3@1x_sm.jpg"
                       alt="Проект 3"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <div class="portfolio-overlay">
@@ -399,8 +393,6 @@
                     <img
                       src="./images/portfolio/img-4@1x_sm.jpg"
                       alt="Проект 4"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <div class="portfolio-overlay">
@@ -476,8 +468,6 @@
                     <img
                       src="./images/portfolio/img-5@1x_sm.jpg"
                       alt="Проект 5"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <div class="portfolio-overlay">
@@ -547,8 +537,6 @@
                     <img
                       src="./images/portfolio/img-6@1x_sm.jpg"
                       alt="Проект 6"
-                      width="370"
-                      height="294"
                   /></picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
@@ -625,8 +613,6 @@
                     <img
                       src="./images/portfolio/img-7@1x_sm.jpg"
                       alt="Проект 7"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <div class="portfolio-overlay">
@@ -702,8 +688,6 @@
                     <img
                       src="./images/portfolio/img-8@1x_sm.jpg"
                       alt="Проект 8"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <div class="portfolio-overlay">
@@ -779,8 +763,6 @@
                     <img
                       src="./images/portfolio/img-9@1x_sm.jpg"
                       alt="Проект 9"
-                      width="370"
-                      height="294"
                     />
                   </picture>
                   <div class="portfolio-overlay">
@@ -909,5 +891,71 @@
         </div>
       </div>
     </footer>
+    <!-- mobile menu -->
+    <div class="menu-overlay" data-menu>
+      <div class="mobile-container">
+        <button class="menu-close" type="button" data-menu-close>
+          <svg class="menu-close__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-list mobile-list__nav list">
+          <li class="mobile-item mobile-item__nav">
+            <a href="./index.html" class="mobile-link mobile-link__nav link"
+              ><span>Студія</span></a
+            >
+          </li>
+          <li class="mobile-item mobile-item__nav">
+            <a href="./portfolio.html" class="mobile-link mobile-link__nav link"
+              ><span>Портфоліо</span></a
+            >
+          </li>
+          <li class="mobile-item mobile-item__nav">
+            <a href="" class="mobile-link mobile-link__nav link"
+              ><span>Контакти</span></a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-list mobile-list__contacts list">
+          <li class="mobile-item mobile-item__contacts">
+            <a
+              href="tel:+380961111111"
+              class="mobile-link mobile-link__contacts link"
+              ><span>+38 096 111 11 11</span></a
+            >
+          </li>
+          <li class="mobile-item mobile-item__contacts">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-link mobile-link__contacts link"
+              ><span>info@devstudio.com</span></a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-list mobile-list__social list">
+          <li class="mobile-item mobile-item__social link">
+            <a lang="en" href="" class="mobile-link mobile-link__social link"
+              ><span>Instagram</span></a
+            >
+          </li>
+          <li class="mobile-item mobile-item__social link">
+            <a lang="en" href="" class="mobile-link mobile-link__social link"
+              ><span>Twitter</span></a
+            >
+          </li>
+          <li class="mobile-item mobile-item__social link">
+            <a lang="en" href="" class="mobile-link mobile-link__social link"
+              ><span>Facebook</span></a
+            >
+          </li>
+          <li class="mobile-item mobile-item__social link">
+            <a lang="en" href="" class="mobile-link mobile-link__social link"
+              ><span>LinkedIn</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -35,6 +35,12 @@
     (100% - var(--indent-main) * (var(--items-command) - 1)) /
       var(--items-command)
   );
+  @media screen and (min-width: 768px) {
+    --items-command: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --items-command: 4;
+  }
 }
 
 // client set
@@ -57,12 +63,18 @@
     --items-characteristic-section: 6;
   }
 }
-
 /* Portfolio section */
 .portfolio-items {
   flex-basis: calc(
-    (100% - var(var(--indent-main)) * (var(--items-portfolio) - 1)) /
+    (100% - var(--indent-main) * (var(--items-portfolio) - 1)) /
       var(--items-portfolio)
   );
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    --items-portfolio: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --items-portfolio: 3;
+  }
 }

@@ -1,18 +1,101 @@
 .section-hero {
   max-width: 1600px;
+
   margin-left: auto;
   margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   background-color: var(--dark-bg-cl);
   background-image: linear-gradient(
       to right,
       var(--gradient-linear-bg),
       var(--gradient-linear-bg)
     ),
-    url(../images/backgrounds/bg1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url(../images/backgrounds/bg-1@1x_sm.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        var(--gradient-linear-bg),
+        var(--gradient-linear-bg)
+      ),
+      url(../images/backgrounds/bg-1@2x_sm.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    // width: 768px;
+    background-image: linear-gradient(
+        to right,
+        var(--gradient-linear-bg),
+        var(--gradient-linear-bg)
+      ),
+      url(../../images/backgrounds/bg-1@1x_md.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--gradient-linear-bg),
+          var(--gradient-linear-bg)
+        ),
+        url(../images/backgrounds/bg-1@2x_md.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    // width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        var(--gradient-linear-bg),
+        var(--gradient-linear-bg)
+      ),
+      url(../images/backgrounds/bg-1@1x_lg.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--gradient-linear-bg),
+          var(--gradient-linear-bg)
+        ),
+        url(../images/backgrounds/bg-1@2x_lg.jpg);
+    }
+  }
+}
+.main-title {
+  max-width: 696px;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 360px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    max-width: 696px;
+  }
 }
