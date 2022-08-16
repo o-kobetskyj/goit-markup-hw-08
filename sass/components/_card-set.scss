@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   gap: var(--indent-main);
 }
-
 /* Сharacteristics section */
 .characteristic-set__item {
   @media screen and (min-width: 480px) {
@@ -20,7 +19,6 @@
     --items-characteristic-section: 4;
   }
 }
-
 /* About us section */
 .about-set {
   flex-basis: calc(
@@ -28,7 +26,6 @@
       var(--items-about-us)
   );
 }
-
 /* Command section */
 .command-card {
   flex-basis: calc(
@@ -42,7 +39,6 @@
     --items-command: 4;
   }
 }
-
 // client set
 .client-item {
   display: flex;

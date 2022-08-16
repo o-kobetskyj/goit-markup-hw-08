@@ -21,19 +21,8 @@
     width: 270px;
   }
 }
-
 .characteristic-set__desc {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
-
-/* Сharacteristics section */
-// .characteristic-set__item {
-//   flex-basis: calc(
-//     (100% - var(--indent-main) * (var(--items-characteristic-section) - 1)) /
-//       var(--items-characteristic-section)
-//   );
-// }
-
-//  --items-characteristic-section: 4;

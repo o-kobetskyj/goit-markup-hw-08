@@ -4,7 +4,6 @@
   position: relative;
   overflow: hidden;
 }
-
 .portfolio-overlay {
   position: absolute;
   display: flex;
@@ -27,7 +26,6 @@
     }
   }
 }
-
 .portfolio-overlay__text {
   font-size: 18px;
   line-height: calc(28 / 18);
@@ -36,7 +34,6 @@
   padding-left: 24px;
   padding-right: 24px;
 }
-
 .portfolio-desc {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
